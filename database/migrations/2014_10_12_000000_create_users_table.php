@@ -17,11 +17,9 @@ return new class extends Migration
             $table->id();
             $table->string('username');
             $table->string('mobile')->unique();
-            $table->timestamp('mobile_verified_at')->nullable();
             $table->string('password');
             $table->string('age');
             $table->bigInteger('location_id')->unsigned();
-            // $table->foreign('location_id')->references('id')->on('locations');
             $table->string('Address');
             $table->bigInteger('balance');
             $table->rememberToken();
